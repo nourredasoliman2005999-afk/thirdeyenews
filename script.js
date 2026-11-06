@@ -1,0 +1,4 @@
+const menuBtn=document.getElementById('menuBtn');const nav=document.getElementById('nav');menuBtn?.addEventListener('click',()=>nav.classList.toggle('open'));
+document.getElementById('searchToggle')?.addEventListener('click',()=>document.getElementById('searchBar').classList.toggle('show'));
+function search(){const q=document.getElementById('searchInput').value.trim().toLowerCase();let visible=0;document.querySelectorAll('#newsGrid .story').forEach(card=>{const text=(card.dataset.title+' '+card.dataset.category).toLowerCase();const show=!q||text.includes(q);card.style.display=show?'':'none';if(show)visible++});document.getElementById('emptyState').hidden=visible!==0}
+document.getElementById('searchBtn')?.addEventListener('click',search);document.getElementById('searchInput')?.addEventListener('keydown',e=>{if(e.key==='Enter')search()});document.getElementById('year').textContent=new Date().getFullYear();

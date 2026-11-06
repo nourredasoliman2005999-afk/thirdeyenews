@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="العين الثالثة - نرى ما وراء الخبر">
+  <title>العين الثالثة | THIRD EYE NEWS</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap top-inner">
+    <a class="brand" href="#" aria-label="العين الثالثة">
+      <img src="assets/logo.png" alt="شعار العين الثالثة" onerror="this.style.display='none'">
+      <span><b>العين الثالثة</b><small>THIRD EYE NEWS</small></span>
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-label="فتح القائمة">☰</button>
+    <nav id="nav">
+      <a class="active" href="#home">الرئيسية</a><a href="#egypt">مصر</a><a href="#governorates">محافظات</a>
+      <a href="#politics">سياسة</a><a href="#economy">اقتصاد</a><a href="#sports">رياضة</a><a href="#culture">فن وثقافة</a>
+    </nav>
+    <button class="search-toggle" id="searchToggle">⌕</button>
+  </div>
+  <div class="searchbar wrap" id="searchBar"><input id="searchInput" placeholder="ابحث في أخبار العين الثالثة..."><button id="searchBtn">بحث</button></div>
+</header>
+<div class="breaking"><div class="wrap breaking-inner"><strong>عاجل</strong><span>تابع آخر الأخبار والتطورات لحظة بلحظة عبر العين الثالثة</span><em>نرى ما وراء الخبر</em></div></div>
+<main class="wrap" id="home">
+  <section class="hero-grid">
+    <article class="lead story" data-category="مصر" data-title="العين الثالثة تطلق منصتها الإخبارية الجديدة">
+      <div class="lead-image image-one"><span>تغطية خاصة</span></div>
+      <div class="lead-copy"><label>الرئيسية · أخبار مصر</label><h1>العين الثالثة.. نرى ما وراء الخبر ونضع الحقيقة أمام القارئ</h1><p>منصة إخبارية تتابع الأحداث المحلية والعربية والدولية، وتقدم تغطية مهنية تضع المعلومة في سياقها.</p><small>منذ قليل · فريق التحرير</small></div>
+    </article>
+    <div class="side-stories">
+      <article class="story compact" data-category="محافظات" data-title="متابعة أبرز أخبار المحافظات"><div class="thumb thumb-a"></div><div><label>محافظات</label><h3>متابعة أبرز أخبار المحافظات على مدار الساعة</h3><small>منذ 20 دقيقة</small></div></article>
+      <article class="story compact" data-category="اقتصاد" data-title="قراءة في المشهد الاقتصادي"><div class="thumb thumb-b"></div><div><label>اقتصاد</label><h3>قراءة في المشهد الاقتصادي وأبرز المؤشرات</h3><small>منذ ساعة</small></div></article>
+      <article class="story compact" data-category="رياضة" data-title="أخبار الرياضة اليوم"><div class="thumb thumb-c"></div><div><label>رياضة</label><h3>أخبار الرياضة اليوم.. متابعة وتحليل</h3><small>منذ ساعتين</small></div></article>
+    </div>
+  </section>
+
+  <section class="section" id="egypt">
+    <div class="section-head"><h2>أحدث الأخبار</h2><a href="#all">عرض الكل ←</a></div>
+    <div class="news-grid" id="newsGrid">
+      <article class="news-card story" data-category="سياسة" data-title="تحركات وقرارات جديدة في المشهد السياسي"><div class="card-image img-politics"></div><div class="card-body"><label>سياسة</label><h3>تحركات وقرارات جديدة في المشهد السياسي</h3><p>تغطية لأبرز المستجدات والتصريحات الرسمية.</p><small>اليوم · 10:30 ص</small></div></article>
+      <article class="news-card story" data-category="محافظات" data-title="أخبار المنيا والمحافظات"><div class="card-image img-minya"></div><div class="card-body"><label>محافظات</label><h3>أخبار المنيا والمحافظات.. تفاصيل وأحداث</h3><p>متابعة ميدانية لأهم الملفات والخدمات المحلية.</p><small>اليوم · 09:45 ص</small></div></article>
+      <article class="news-card story" data-category="اقتصاد" data-title="أسواق المال والاقتصاد"><div class="card-image img-economy"></div><div class="card-body"><label>اقتصاد</label><h3>أسواق المال والاقتصاد.. أبرز المؤشرات</h3><p>قراءة مبسطة في تطورات الاقتصاد والأسواق.</p><small>اليوم · 09:10 ص</small></div></article>
+      <article class="news-card story" data-category="رياضة" data-title="حصاد الملاعب وأهم المواجهات"><div class="card-image img-sports"></div><div class="card-body"><label>رياضة</label><h3>حصاد الملاعب وأهم المواجهات</h3><p>نتائج ومتابعات وتحليلات رياضية.</p><small>أمس · 11:20 م</small></div></article>
+    </div>
+    <p class="empty" id="emptyState" hidden>لا توجد نتائج مطابقة لبحثك.</p>
+  </section>
+
+  <section class="lower-grid">
+    <section class="section" id="governorates"><div class="section-head"><h2>من المحافظات</h2><a href="#governorates">المزيد ←</a></div><div class="list-story"><b>المنيا</b><span>أبرز الأخبار والخدمات والأحداث المحلية</span></div><div class="list-story"><b>القاهرة</b><span>متابعة يومية لأهم الملفات</span></div><div class="list-story"><b>محافظات مصر</b><span>تغطية شاملة من مختلف المدن</span></div></section>
+    <aside class="most-read"><h2>الأكثر قراءة</h2><ol><li>أهم أخبار اليوم في مصر</li><li>ملفات خدمية تهم المواطنين</li><li>متابعة أبرز الأحداث المحلية</li><li>قراءة في أهم التطورات</li></ol><div class="quote">«نرى ما وراء الخبر»</div></aside>
+  </section>
+  <section class="category-strip" id="politics"><a>سياسة</a><a id="economy">اقتصاد</a><a id="sports">رياضة</a><a id="culture">فن وثقافة</a><a>تكنولوجيا</a><a>عالم</a>
+  </section>
+</main>
+<footer><div class="wrap footer-inner"><div><b>العين الثالثة</b><p>THIRD EYE NEWS · نرى ما وراء الخبر</p></div><div class="footer-links"><a href="#home">الرئيسية</a><a href="#egypt">أحدث الأخبار</a><a href="#governorates">المحافظات</a><a href="mailto:info@thirdeyenews.com">تواصل معنا</a></div><small>© <span id="year"></span> العين الثالثة. جميع الحقوق محفوظة.</small></div></footer>
+<script src="script.js"></script>
+</body>
+</html>
